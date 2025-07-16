@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Album Collector</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <form method="GET">
+      <label for="collection1">Artist Name:</label><br />
+      <input type="text" id="collection1" name="collection1" required placeholder="Enter Artist Name"/><br />
+
+      <!-- <label for="collection2">Name of the Album: </label><br />
+      <input id="collection2" name="collection2" type="text" required placeholder="Enter Album Name"/><br />
+
+      <label for="collection3">Name of the Song: </label><br />
+      <input id="collection3" name="collection3" type="text" required placeholder="Enter Song Name"/><br /> -->
+
+      <input type="submit" value="Add to your collection" onclick="fetchData()"/>
+
+      <img src="" alt="Artist info" id="artistinfo" style="display: none" />
+    </form>
+
+    <script src="../Album_apis/album_db.js"></script>
+  </body>
+</html>
